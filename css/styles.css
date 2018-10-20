@@ -7,3 +7,8 @@ h1 {
 .noGo {
   display: none;
 }
+.well {
+  text-align: center;
+  color: white;
+ background-image: url(../img/code.jpg);
+}

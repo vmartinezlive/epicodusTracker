@@ -1,26 +1,3 @@
-var sumYes = function(input2, input1) {
-	return input2 + input2;
-};
-
-var
-var sumNo = function(no, no) {
-	return no + no;
-};
-
-var totalSumYes = function(sumYes) {
-	if (sumYes >= 2) {
-		return true;
-	}else{
-		return false;
-	}
-var totalSumNo = function(sumNo) {
-	if (sumYes >= 2) {
-		return true;
-	}else{
-		return false;
-	};
-};
-};
 
 $(document).ready(function(){
 	$("form#survey").submit(function() {
