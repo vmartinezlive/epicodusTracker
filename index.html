@@ -5,13 +5,13 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts1.js"></script>
+    <script scr="js/scripts.js"></script>
     <title>epicodusTracker</title>
   </head>
   <body>
     <h1>Epicodus Track Survey</h1>
     <div class="container">
-      <form>
+      <form id="survey">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">First Name</label>
@@ -40,70 +40,82 @@
               <label for="inputCity">State</label>
               <input type="text" class="form-control" id="inputState">
             </div>
-          <div class="form-group col-md-3">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <div class="form-group col-md-3">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
           </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+      <div class="container">
+        <!--try if this will be better in the morning -->
+        <!-- <div class="checkbox">
+        <label><input type="checkbox" value="">Option 1</label>
+      </div>
+      <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
     </div>
-    <div class="container">
-      <div class="form-group">
-        <label for="firstQuestion">Do you like problem solving?</label>
-        <select class="form-control" id="firstQuestion">
-          <option id="inputYes">Yes</option>
-          <option id="inputNo">No</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="secondQuestion">Are you a great communicator?</label>
-        <select class="form-control" id="secondQuestion">
-          <option id="inputYes">Yes</option>
-          <optionid id="inputNo">No</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="thirdQuestion">Do you have patience?</label>
-        <select class="form-control" id="thirdQuestion">
-          <option id="inputYes">Yes</option>
-          <optionid id="inputNo">No</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="fourthQuestion">Do you like to colloboration and teamwork?</label>
-        <select class="form-control" id="fourthQuestion">
-          <option id="inputYes">Yes</option>
-          <optionid id="inputNo">No</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="fifthQuestion">Do you working on puzzles and logic?</label>
-        <select class="form-control" id="fifthQuestion">
-          <option id="inputYes">Yes</option>
-          <optionid id="inputNo">No</option>
-        </select>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <div class="yesProgramer">
-        <p>Wonderful! You have what it takes to do great in software development</p>
-      </div>
-      <div class="noGo">
-        <p>Perhaps, you would like to exlore other careers</p>
-      </div>
-      <h1>Tracks</h1>
-      <ul>
-        <li><a href="https://www.oracle.com/java/">JAVA</a></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <li><a href="http://pollingplacephotoproject.org/content.cfm/how_to_participate">JAVASCRIPTS</a></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <li><a href="http://www.php.net/">PHP</a></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <li><a href="https://www.ruby-lang.org/en/">RUBY</a></li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </ul>
-    </div>
+    <div class="checkbox disabled">
+    <label><input type="checkbox" value="" disabled>Option 3</label>
+  </div> -->
+  <div class="form-group">
+    <label for="firstQuestion">Do you like problem solving?</label>
+    <select class="form-control" id="firstQuestion">
+      <option id="input1">Yes</option>
+      <option id="input2">No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="firstQuestion">Are you a great communicator</label>
+    <select class="form-control" id="secondQuestion">
+      <option id="input1">Yes</option>
+      <option id="input2">No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="firstQuestion">Do you have patience?</label>
+    <select class="form-control" id="thirdQuestion">
+      <option id="input1">Yes</option>
+      <option id="input2">No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="firstQuestion">Do you like to colloboration and teamwork?</label>
+    <select class="form-control" id="fourthQuestion">
+      <option id="input1">Yes</option>
+      <option id="input2">No</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="firstQuestion">Do you working on puzzles and logic?</label>
+    <select class="form-control" id="fifthQuestion">
+      <option id="input1">Yes</option>
+      <option id="input2">No</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="yesProgramer">
+    <p>Wonderful! You have what it takes to do great in software development</p>
+  </div>
+  <div class="noGo">
+    <p>Perhaps, you would like to exlore other careers</p>
+  </div>
+  <div class="tracksToShow">
+    <h1>Tracks</h1>
+    <ul>
+      <li><a href="https://www.oracle.com/java/">JAVA</a></li>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a></li>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li><a href="http://pollingplacephotoproject.org/content.cfm/how_to_participate">JAVASCRIPTS</a></li>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li><a href="http://www.php.net/">PHP</a></li>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li><a href="https://www.ruby-lang.org/en/">RUBY</a></li>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </ul>
+  </div>
+  </div>
   </body>
 </html>

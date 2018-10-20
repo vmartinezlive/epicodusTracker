@@ -1,9 +1,12 @@
-var sumYes = function(yes, yes) {
-	return yes + yes;
-}
+var sumYes = function(input2, input1) {
+	return input2 + input2;
+};
+
+var
 var sumNo = function(no, no) {
 	return no + no;
-}
+};
+
 var totalSumYes = function(sumYes) {
 	if (sumYes >= 2) {
 		return true;
@@ -15,15 +18,15 @@ var totalSumNo = function(sumNo) {
 		return true;
 	}else{
 		return false;
-	}
-	}
-}
+	};
+};
+};
 
 $(document).ready(function(){
-	$("form#calculator").submit(function() {
+	$("form#survey").submit(function() {
 
 		var inputYes = parseInt($("#input1").val());
-		var inpoutNo = parseInt($("#input2").val());
+		var inputNo = parseInt($("#input2").val());
 
 		if(totalSumYes) {
 			$(".yesProgramer").show();
@@ -34,3 +37,4 @@ $(document).ready(function(){
 		}
 
 			event.preventDefault();
+// notes for the morning - try changing input1 bak to value
