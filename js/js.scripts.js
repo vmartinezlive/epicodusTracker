@@ -1,11 +1,16 @@
 
-$(document).ready(function(){
+$(document).ready(function(event){
 	$("form#survey").submit(function() {
+		$("input[type=radio]"). click(function() {
+		var total = 0;
+		$("input[type=radio]:checked"). each(function() {
+		total += parseFloat($(this). val());
+		});
+		$(".totalSum"). val(total);
+	});
 
-		var inputYes = parseInt($("#input1").val());
-		var inputNo = parseInt($("#input2").val());
 
-		if(totalSumYes) {
+		if(totalSum >= 2) {
 			$(".yesProgramer").show();
 			$(".noGo").hide();
 		} else {
@@ -15,3 +20,14 @@ $(document).ready(function(){
 
 			event.preventDefault();
 // notes for the morning - try changing input1 bak to value
+
+
+
+
+
+
+
+
+
+
+<script>
