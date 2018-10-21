@@ -1,13 +1,14 @@
 $(document).ready(function(){
 	$("form#survey").submit(function(event) {
 
+		event.preventDefault();
 		var nameFirst = $("input#inputFirstName").val();
 		var nameLast = $("input#inputLastName").val();
 
 		$(".enteredFirstName").text(nameFirst);
 		$(".enteredLastName").text(nameLast);
 
-
+debugger;
 			var inputQuestion1 = $("input:radio[name=survey1].checked").val();
 			console.log(inputQuestion1);
 			var inputQuestion2 = $("input:radio[name=survey2].checked").val();
@@ -27,7 +28,7 @@ $(document).ready(function(){
 				$(".yesProgramer").show();
 			}
 
-			event.preventDefault();
+
 
 
 	)};
