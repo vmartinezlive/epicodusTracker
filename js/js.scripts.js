@@ -1,32 +1,34 @@
-
-var nameFirst = $("input#inputFirstName").val();
-var nameLast = $("input#inputName").val();
-
-
 $(document).ready(function(){
 	$("form#survey").submit(function(event) {
 
+		var nameFirst = $("input#inputFirstName").val();
+		var nameLast = $("input#inputLastName").val();
+
 		$(".enteredFirstName").text(nameFirst);
-		$(".enteredLastName").text(nameFirst);
+		$(".enteredLastName").text(nameLast);
 
-		var inputQuestion1 = $("input:radio[survey1=question1].checked").val();
-		var inputQuestion2 = $("input:radio[survey2=question2].checked").val();
-		var inputQuestion3 = $("input:radio[survey3=question3].checked").val();
-		var inputQuestion4 = $("input:radio[survey4g=question4].checked").val();
-		var inputQuestion5 = $("input:radio[survey5=question5].checked").val();
-		var sumSurvey = function (inputQuestion1, inputQuestion2, inputQuestion3, inputQuestion4, inputQuestion5) {
-			return inputQuestion1 + inputQuestion2 + inputQuestion3 + inputQuestion4 + inputQuestion5;
-		};
 
-		if(sumSurvey >= 2) {
-			$(".yesProgramer").show();
-			$(".noGo").hide();
-		} else {
-			$(".noGo").show();
-			$(".yesProgramer").show();
-		}
+			var inputQuestion1 = $("input:radio[name=survey1].checked").val();
+			console.log(inputQuestion1);
+			var inputQuestion2 = $("input:radio[name=survey2].checked").val();
+			var inputQuestion3 = $("input:radio[name=survey3].checked").val();
+			var inputQuestion4 = $("input:radio[name=survey4].checked").val();
+			var inputQuestion5 = $("input:radio[name=survey5.checked").val();
+			var sumSurvey = function (inputQuestion1, inputQuestion2, inputQuestion3, inputQuestion4, inputQuestion5) {
+				return inputQuestion1 + inputQuestion2 + inputQuestion3 + inputQuestion4 + inputQuestion5;
+			};
 
-		event.preventDefault();
+			if(sumSurvey >= 2) {
+				$(".yesProgramer").show();
+				$(".noGo").hide();
+				$(".tracksToShow").show();
+			} else {
+				$(".noGo").show();
+				$(".yesProgramer").show();
+			}
+
+			event.preventDefault();
+
 
 	)};
 
