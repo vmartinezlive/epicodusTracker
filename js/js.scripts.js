@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$(".enteredFirstName").text(nameFirst);
 		$(".enteredLastName").text(nameLast);
 
-debugger;
+
 			var inputQuestion1 = $("input:radio[name=survey1].checked").val();
 			console.log(inputQuestion1);
 			var inputQuestion2 = $("input:radio[name=survey2].checked").val();
