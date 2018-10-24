@@ -31,9 +31,9 @@ $(document).ready(function(){
 
 
 
-	)};
+	});
 
-)};
+});
   //
 	// 	$("input[type=radio]"). click(function() {
 	// 	var total = 0;
