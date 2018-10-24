@@ -9,12 +9,12 @@ $(document).ready(function(){
 		$(".enteredLastName").text(nameLast);
 
 
-			var inputQuestion1 = $("input:radio[name=survey1].checked").val();
-			console.log(inputQuestion1);
-			var inputQuestion2 = $("input:radio[name=survey2].checked").val();
-			var inputQuestion3 = $("input:radio[name=survey3].checked").val();
-			var inputQuestion4 = $("input:radio[name=survey4].checked").val();
-			var inputQuestion5 = $("input:radio[name=survey5.checked").val();
+			var inputQuestion1 = $("input:radio[name=survey1]:checked").val();
+			debugger;
+			var inputQuestion2 = $("input:radio[name=survey2]:checked").val();
+			var inputQuestion3 = $("input:radio[name=survey3]:checked").val();
+			var inputQuestion4 = $("input:radio[name=survey4]:checked").val();
+			var inputQuestion5 = $("input:radio[name=survey5]:checked").val();
 			var sumSurvey = function (inputQuestion1, inputQuestion2, inputQuestion3, inputQuestion4, inputQuestion5) {
 				return inputQuestion1 + inputQuestion2 + inputQuestion3 + inputQuestion4 + inputQuestion5;
 			};
