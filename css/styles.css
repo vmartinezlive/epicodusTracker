@@ -1,12 +1,17 @@
 body {
   font-family: 'Iceland', cursive;
+  font-size: 15px;
 }
-h1 {
+
+/* h1 {
   text-align: center;
-}
+  font-color: white;
+} */
+
 .yesProgramer {
   display: none;
 }
+
 .noGo {
   display: none;
 }
@@ -15,12 +20,19 @@ h1 {
   color: white;
  background-image: url(../img/code.jpg);
 } */
+
 .tracksToShow {
   display: none;
-  background-image: url(../img/code.jpg);
-  opacity: 0.5;
 }
+
 h2 {
   text-align: center;
   color: red;
+}
+
+.jumbotron {
+  background-image: url(../img/code.jpg);
+  opacity: 0.95;
+  text-align: center;
+  color: white;
 }
