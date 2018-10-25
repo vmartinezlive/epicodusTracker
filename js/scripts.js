@@ -16,16 +16,17 @@ $(document).ready(function(){
 			var inputQuestion5 = parseInt($("input:radio[name=survey5]:checked").val());
 			var sumSurvey = function (inputQuestion1, inputQuestion2, inputQuestion3, inputQuestion4, inputQuestion5) {
 				return inputQuestion1 + inputQuestion2 + inputQuestion3 + inputQuestion4 + inputQuestion5;
+
 			};
 			var sum = sumSurvey(inputQuestion1, inputQuestion2, inputQuestion3, inputQuestion4, inputQuestion5);
 			if(sum > 5) {
-				$(".yesProgramer").tracksToShow();
+				$(".yesProgramer").show();
 				$("#survey").hide();
 				$(".tracksToShow").show();
 			} else if (sum <= 5) {
 				$(".noGo").show();
 			}
-
+console.log(sum);
 
 
 
