@@ -36,3 +36,12 @@ h2 {
   text-align: center;
   color: white;
 }
+#link {
+  color: red;
+}
+
+.noEnter {
+  display: none;
+  color: red;
+  font-size: 25px;
+}

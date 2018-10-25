@@ -25,8 +25,9 @@ $(document).ready(function(){
 				$(".tracksToShow").show();
 			} else if (sum <= 5) {
 				$(".noGo").show();
-			}
-console.log(sum);
+			} else
+			 	$(".noEnter").show();
+
 
 
 
